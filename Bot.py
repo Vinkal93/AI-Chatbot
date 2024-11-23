@@ -2,12 +2,18 @@
 from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
-API_KEY = "AIzaSyBUISeOrDh1C2Yir4JnAkcwth2skb7mHwc"  # Add your API key here
+# updated
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-pro')
+
+# update endpoint
 
 @app.route('/')
 def home():
