@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinkal041 AI Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h6>Presented by vinkal Prajapati</h6>
+            <h1>What can I help you ship?</h1>
+                    <button class="chip">Summrise a text </button>
+                    <button class="chip">Make a plan </button>
+                    <button class="chip">Get advice</button>
+        </header>
+
+        <div class="chat-area">
+            <div class="chat-container" id="chatContainer">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="userInput" placeholder="Ask Vinkal041 a question..." rows="1"></textarea>
+                    <div class="button-group">
+                        <button class="attach-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+                            </svg>
+                        </button>
+                        <button id="sendButton" class="send-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="suggestion-chips">
+                    <button class="chip">What is your name</button>
+                    <button class="chip">Write a poem for young youth.</button>
+                    <button class="chip">who developed you </button>
+                    <button class="chip">Who is vinkal prajapati</button>
+                    <button class="chip">Who is pallu chutiya</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by Vinkal Prajapati</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
