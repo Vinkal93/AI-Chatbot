@@ -180,6 +180,7 @@ footer {
 
     .message {
         max-width: 90%;
+        box-sizing: border-box;
     }
 
     .suggestion-chips {
