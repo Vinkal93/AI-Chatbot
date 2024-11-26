@@ -124,16 +124,3 @@ Submit a pull request! 🎉
 🏆 Upwork Profile
 📜 License
 This project is licensed under the MIT License. 📝
-
-yaml
-Copy code
-
----
-
-### **How to Save This File?**
-1. Open your project folder (`D:\Coding\Python\chatbot`).
-2. Create a new file named `README.md`.
-3. Paste the above content into the file.
-4. Save it.
-
-Now, your project has a professional and detailed README file! 🚀
